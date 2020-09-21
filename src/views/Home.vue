@@ -5,6 +5,10 @@
   <h2>computed: {{ num1 }}</h2>
   <h2>可修改的computed: {{ num2.value }}</h2>
   <h2>watch监听多个: {{ num.value }} {{state.name}}</h2>
+  <div>
+    {{state.count}}
+    <button @click="state.count++">add</button>
+  </div>
 </template>
 <script>
 import { ref, reactive, readonly, computed, watch } from "vue";
